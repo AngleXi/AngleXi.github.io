@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑动页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src='../js/rem.js'></script>
+
+</head>
+<body>
+
+<div id="slide-banner">
+ <div class="content">
+  <div class="slide-panel slide1">
+       <div class="slide1-top"></div>
+       <div class="slide1-bot">
+         <p class="slide1-p1">多联系，不孤单</p>
+         <p class="slide1-p2"><span>走秀</span><b>与</b>你相伴</p>
+       </div>
+    </div>
+    <div class="slide-panel slide2">
+      <h4><img src="../img/slide2.png"></h4>
+      <h5>放入购物袋</h5>
+      <h6><img src="../img/slide2-yuan.png"></h6>
+      <p><img src="../img/slide2-bot.png"></p>
+    </div>
+    <div class="slide-panel slide3">
+      <h4>走秀网商品</h4>
+      <p><img src="../img/slide3.png" alt=""></p>
+    </div>
+    <div class="slide-panel slide4">
+     <h4><img src="../img/slide4.png"></h4>
+     <p>NOW,开始走秀购物之行......</p>
+     <a href="home.html" id="now-star">开始体验</a>
+    </div>
+
+ </div>
+ <div id="btn-list">
+     <a href="javascript:;" class="page-active"></a><a href="javascript:;"></a><a href="javascript:;"></a><a href="javascript:;"></a>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(window).load(function(){
+	var  
+	   oSlideCon = $("#slide-banner .content"),
+	   oSlide1   = $(".slide1"),
+	   oBtnList  =$("#btn-list"),
+	   oBtnListA =$("#btn-list a"),
+	   width     = window.innerWidth,
+	   height    = window.innerHeight,
+	   nowPage   =0,
+	   iPageBtn  =true;	   
+
+	oSlideCon.width(width*4);
+	oSlideCon.height(height);
+
+	$(".slide-panel").width(width);
+
+	oSlideCon.swipe({
+		swipe:function(event,direction,distance,fingerCount){
+
+			if(direction=="left"){
+				nowPage++;
+			}
+			if(direction=="right"){
+				nowPage--;
+			}
+			if (nowPage<0) {
+				nowPage=0;
+			}
+			if (nowPage>3) {
+				nowPage=3;
+			}
+            
+            oBtnListA.removeClass("page-active").eq(nowPage).addClass("page-active");
+			oSlideCon.animate({left:nowPage * -100 + "%"},{duration:200})
+
+			}
+
+	});
+});
+</script>
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>走秀网--商品介绍</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src='../js/rem.js'></script>
+</head>
+<body>
+
+<!-- ****************顶部*************** -->
+  
+	<div id="reg-header" class="goods-header">
+	 <b><img src="../img/register.png" alt=""></b>
+	 <span>商品介绍</span>
+	 <a href="javascript:;" class="go-login">分享</a>
+	</div>
+
+<!-- *********************商品详情介绍********** -->
+
+<div id="intr-intr" class="intr-panel"  style="display:block">
+ <div class="intr-top">距离结束时间 : 04天01时15分47.2秒</div>
+ <div class="intr-main">
+  <a href="javascript:;" class="intr-img"><img src="../img/intr-1.png" alt=""></a>
+  <p><img src="../img/intr-2.png" alt=""></p>
+  <p class="intr-price">市场价 ： <b>￥439</b> &nbsp;4.8折 <span>125人购买</span></p>
+ </div>
+</div>
+
+<div id="intr-detail" class="intr-panel">
+ <img src="../img/intr-3.png" alt="">
+ <p>产地：土耳其&nbsp;&nbsp;品牌：LIU.JO&nbsp;&nbsp;商品名称：灰色个性团印花短袖T恤（配饰品）<br><br>
+舒适的领口，时尚大方，简极简的风格，彰显女人本色。兽头人参的团，彰显另类个性.舒适的领口，时尚大方，简极简的风格，彰显女人本色。兽头人参的团，彰显另类个性。<br><br>
+细节亮点：印花 ，配装物品<br><br>
+舒适的领口，时尚大方，简极简的风格，彰显女人本色。兽头人参的团，彰显另类个性
+ </p>
+</div>
+
+<div id="intr-slide" class="intr-panel">
+ <ul class="img-total">
+  <li><a href="javascript:;"><img src="../img/cloth1.png" alt=""></a></li>
+  <li><a href="javascript:;"><img src="../img/cloth2.png" alt=""></a></li>
+  <li><a href="javascript:;"><img src="../img/cloth3.png" alt=""></a></li>
+  <li><a href="javascript:;"><img src="../img/cloth4.png" alt=""></a></li>
+ </ul>
+</div>
+
+<!-- ***********************底部****************** -->
+   <div id="intr-footer">
+    <a href="javascript:;" class="intr-active">介绍</a>
+    <a href="javascript:;">详情</a>
+    <a href="javascript:;">实拍</a>
+   </div>
+</body>
+</html>
+
+<script type="text/javascript">
+$(window).load(function(){
+	var  
+	   oSlideCon = $(".img-total"),
+	   width     = window.innerWidth,
+	   height    = window.innerHeight,
+	   nowPage   =0,
+	   iPageBtn  =true;	   
+
+	oSlideCon.width(width*4);
+
+	$(".img-total li").width(width);
+
+	oSlideCon.swipe({
+		swipe:function(event,direction,distance,fingerCount){
+
+			if(direction=="left"){
+				nowPage++;
+			}
+			if(direction=="right"){
+				nowPage--;
+			}
+			if (nowPage<0) {
+				nowPage=0;
+			}
+			if (nowPage>3) {
+				nowPage=3;
+			}
+            
+			oSlideCon.animate({left:nowPage * -100 + "%"},{duration:200})
+
+			}
+
+	});
+
+    var 
+       oIntrPanel=$(".intr-panel"),
+       oIntrFooter=$("#intr-footer"),
+       oIntrFooterA=$("#intr-footer a");
+
+    oIntrFooterA.click(function(){
+    	var iIndex=$(this).index();
+    	oIntrPanel.css({display:"none"}).eq(iIndex).css({display:"block"});
+    	oIntrFooterA.removeClass("intr-active").eq(iIndex).addClass("intr-active");
+    });
+ 
+});
+</script>
