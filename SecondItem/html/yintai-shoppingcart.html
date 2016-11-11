@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的购物袋-银泰网 - 银泰百货连锁在线购物中心，银泰百货集团官方购物网站</title>
+	<link rel="shortcut icon" href="../img/biao.ico" type="image/x-icon" media="screen">
+	<script type="text/javascript" src="../js/jQuery.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="../css/yintaiHome.css">
+    <link rel="stylesheet" type="text/css" href="../css/head-footer.css">
+    <script type="text/javascript" src="../js/yintai.js"></script>
+</head>
+<body>
+
+<!-- *************Header部分**************** -->
+ 	<div id="header">
+ 	 
+ 	  <!-- ************header中nav部分************ -->
+ 	  <div id="header-nav">
+ 	    <div class="content">
+ 	    <div class="nav-left left">
+ 	      <ul>
+ 	      	<li><a href="yintai.html">银泰首页</a></li>
+ 	      	<li class="nav-2">
+ 	      	  <a href="javascript:;">微信<b></b></a>
+ 	      	  <div class="hua">
+ 	      	  <a href="javascript:;">微信<b></b></a>
+ 	      	  <img src="../img/weixin.png" alt="">
+ 	      	  </div>
+ 	      	</li>
+ 	      	<li class="last nav-3">
+ 	      	<a href="javascript:;">手机银泰<b></b></a>
+ 	      	<div class="hua">
+ 	      	  <a href="javascript:;">手机银泰<b></b></a>
+ 	      	  <p>扫一扫，下载银泰客户端</p>
+ 	      	  <img src="../img/phone-code.png" alt="">
+ 	      	  </div>
+ 	      	</li>
+ 	      </ul>
+ 	    </div>
+ 	    <div class="nav-right right">
+          
+          <ul>
+            <li><a href="javascript:;">Hi,</a></li>
+            <li id='user-name' ><a href="javascript:;" style='color:tomato;'>欢迎来到银泰网!</a></li>
+            <li id='backhome' style='display: none'><a href="javascript:;">退出</a></li>
+            <li id='login'><a href="yintai-login.html">登录</a></li>
+            <li id="register"><a href="yintai-register.html">注册</a></li>
+            <li>|</li>
+          	<li><a href="javascript:;">我的订单</a></li>
+          	<li>|</li>
+          	<li class="nav-menu">
+          	<a href="javascript:;" class="nav-a">我的银泰</a>
+          	<b></b>
+          	<ul>
+          		<li><a href="javascript:;">我的收藏</a></li>
+          		<li><a href="javascript:;">我的余额</a></li>
+          		<li><a href="javascript:;">我的银元</a></li>
+          		<li><a href="javascript:;">我的银泰卡</a></li>
+          		<li><a href="javascript:;">我的优惠券</a></li>
+          		<li><a href="javascript:;">我的积分</a></li>
+          	</ul>
+          	</li>
+          	<li>|</li>
+          	<li><a href="javascript:;">银泰卡</a></li>
+          	<li>|</li>
+          	<li><a href="javascript:;">帮助中心</a></li>
+          </ul>
+ 	    </div>
+ 	   </div>
+ 	  </div>
+
+ 	  <!-- ******************LOGO部分**************** -->
+ 	  <div id="header-logo">
+       <div class="content">
+        <div class="yt-wrap top-main">
+            <h1 class="ilogo">
+                <a href="yintai.html">银泰网</a>
+            </h1>
+        </div>
+       </div>
+      </div>
+
+
+    </div>
+
+    <!-- **********************main部分****************** -->
+    <div id="shop-main">
+     <div class="content">
+      <div class="cart-steps">
+         <h2></h2>
+      </div>
+      <div class="cart-goods" style='display: none'>
+        <table class="cart-goods-tb">
+         <tr class='cg-title'>
+         	<td class='cart-td1'><label><input type="checkbox" class='all-choose'> 全选</label></td>
+         	<td class='cart-td2' style='text-indent: 50px'>商品</td>
+         	<td class='cart-td3'>单价</td>
+         	<td class='cart-td4'>数量</td>
+         	<td class='cart-td5'>获得积分</td>
+         	<td class='cart-td6' style="display:inline-block;width:91px;">操作</td>
+         </tr>
+         <tr style='height:30px;background-color: #eeeeee;'>
+         	<td colspan="6" style='text-indent: 15px'>普通商品</td>
+         </tr>
+         
+        </table>
+      </div>
+
+      <div class="cart-goods-bot" style='display: none'>
+        <div class="cg-b-t">
+         <div class="cgbt-t clear">
+         <p class="left">
+           <label><input type="checkbox" class="all-choose "> 全选</label>
+           <a href="javascript:;" class="del-choose">删除选中的商品</a>
+           <a href="yintai-detailpages.html" class="continue-buy">继续购物</a>
+          </p>
+          <p class="right cgbt-t-dingdan"></p>
+          </div>
+          <div class="cgbt-b" style='text-align: right'>
+           商品总价：<span class="goods-total-price">￥<b class='cloth-total-price'>0</b></span> - 节省金额：<span class="downmoney">￥0</span> + 运费： <span class="yunfei">￥<b class=' carriage'>0</b></span> = 结算金额：<span class="final-money">￥<b class='settlement'>0</b></span>
+          </div>
+          
+        </div>
+        <div class="cg-b-b" style='text-align: right'>
+        
+         <a href="yintai-orderPage.html" class="balance right"></a>
+         <div style="height:50px;line-height: 50px" class='right'>
+        <b>结算金额：</b><i class='runprice-iten'></i><span class='final-money'>￥<b class='settlement' style='color:#e5004f'>0</b></span>
+        </div>
+        </div>
+      </div>
+
+      <div class="cart-empty">
+        <div class="cart-empty-content">
+          <div class="EmptyIco"></div>
+          <div class="EmptyDetails">
+          <h3>您的购物袋内尚未添加产品。</h3>
+          <p>请尽情选购您要购买的产品吧! 祝您购物愉快!</p>
+          <a href="yintai-detailpages.html" class="c-btn c-btn-big" title="继续购物">继续购物</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-custome-list">
+        <a href="javascript:;" class="cart-hov">购买了同样商品的顾客还购买了<i style='display: block'></i></a>
+        <a href="javascript:;">根据您的浏览为您推荐<i></i></a>
+        <a href="javascript:;">看了又看<i></i></a>
+      </div>
+
+      <div class="cart-other-goods" style='display: block'>
+	        <div class="cart-cloth-list ">
+	         <ul class='cart-cloth-ul'>
+	           <li>
+	           <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_11.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_12.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_13.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_14.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_15.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_1.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_2.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_3.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_4.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_5.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_6.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_7.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_8.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_9.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_10.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_11.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_12.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_13.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_14.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_15.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_1.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_2.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_3.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_4.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_5.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	           </ul>
+	        </div>
+	   <div class="cart-dir-list">
+          <a href="javascript:;" class='cart-left-dir'></a><a href="javascript:;" class='cart-right-dir'></a>
+        </div>
+        
+      </div>
+
+        <div class="cart-other-goods">
+
+	          <div class="cart-cloth-list">
+	           <ul class='cart-cloth-ul'>
+	           <li>
+	           <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_11.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_12.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_13.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_14.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_15.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_6.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_7.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_8.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_9.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_10.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_1.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_2.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_3.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_4.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_5.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_11.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_12.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_13.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_14.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_15.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_6.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_7.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_8.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_9.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_10.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	           </ul>
+	           </div>
+	    <div class="cart-dir-list">
+          <a href="javascript:;" class='cart-left-dir'></a><a href="javascript:;" class='cart-right-dir'></a>
+        </div>
+  
+      </div>
+
+        <div class="cart-other-goods">
+	          
+	          <div class="cart-cloth-list">
+	           <ul class='cart-cloth-ul'>
+	           <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_6.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_7.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_8.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_9.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_10.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_11.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_12.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_13.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_14.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_15.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_1.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_2.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_3.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_4.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_5.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_6.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_7.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_8.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_9.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_10.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	            
+	           <li>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_11.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_12.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_13.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_14.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            <div class='margin-none'>
+	            	<a href="javascript:;"><img src="../img/cart-cloth_15.png" alt=""></a>
+	            	<p>【自营】LOVE MOSCHINO白色纯棉印花</p>
+	            	<h6>￥949</h6>
+	            	<a href="" class="push-cart">放入购物袋</a>
+	            </div>
+	            </li>
+	           </ul>
+	           </div>
+	    <div class="cart-dir-list">
+          <a href="javascript:;" class='cart-left-dir'></a><a href="javascript:;" class='cart-right-dir'></a>
+        </div>
+        
+      </div>
+
+
+        
+        
+    <!-- ************TOP************* --> 
+    <div class="foot-ji-top">
+     <div class="foot-ji"></div>
+     <div id="top" class="goodsList-backtop shopping-backtop"></div>
+    </div>
+    
+
+
+
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!-- ****************footer部分************** -->
+       <div id="footer">
+         <div class="content">
+          <div class="yt-wrap itips">
+            <span class="service">
+             <strong>400-119-1111</strong><i>8:00-24:00</i>
+             <b>service@yintai.com</b>
+           </span>
+           <span class="delivery">
+            <strong><i>15天</i>无忧退换货</strong>
+            <b>为您提供优质售后服务</b>
+           </span>
+          <span class="genuine">
+            <strong><i>100%</i>正品保证</strong>
+            <b>品质护航 购物无忧</b>
+          </span>
+          <span class="freight">
+            <strong><i>满199元</i>免运费</strong>
+            <b>为您提供便利物流</b>
+          </span>			
+	    </div>
+	 <div class="yt-wrap ilinks">
+        <a  href="javascript:;">关于银泰</a>|<a href="javascript:;">帮助中心</a>|<a 
+
+		href="javascript:;">退换货政策</a>|<a href="javascript:;">网站地图</a>|<a  href="javascript:;">代理合作</a>|<a  href="javascript:;">品牌招商
+
+		</a>|<a  href="javascript:;">商务合作</a>|<a href="javascript:;">网站联盟</a>|<a  
+
+		href="javascript:;">联系我们</a>|<a  href="javascript:;">加入银泰</a>|<a  
+
+		href="javascript:;">版权声明</a>|<a  href="javascript:;" class="last">法律声明</a>
+	</div>
+	<div class="yt-wrap copyright">
+		<p><a href="javascript:;">浙ICP备10200233号</a><a href="javascript:void(0)">京公网安备110105019085</a><a href="javascript:void(0)">增值电信业务经营许可证：浙B2-20110005</a></p>
+        <p>Yintai © 2016, 银泰电子商务有限公司.</p>
+    </div>
+    <div class="yt-wrap all-mark">
+        <a class="m-integrity" id="___szfw_logo___" href="javascript:;">
+            <img alt="" src="../img/yt-ntegrity.png">
+        </a>
+        <a class="cnnic"  href="javascript:;">
+            <img src="../img/cnnic.png">
+        </a>
+        <a class="commerce" href="javascript:;">
+            <img alt="" src="../img/commerce.gif">
+        </a>
+    </div>
+   </div>
+    </div>
+
+    
+
+
+</body>
+</html>

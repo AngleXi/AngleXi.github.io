@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付-银泰网 - 银泰百货连锁在线购物中心，银泰百货集团官方购物网站</title>
+  <link rel="shortcut icon" href="../img/biao.ico" type="image/x-icon" media="screen">
+	<script type="text/javascript" src="../js/jQuery.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="../css/yintaiHome.css">
+    <link rel="stylesheet" type="text/css" href="../css/head-footer.css">
+    <script type="text/javascript" src="../js/yintai.js"></script>
+</head>
+<body>
+
+<!-- *************Header部分**************** -->
+ 	<div id="header">
+ 	 
+ 	  <!-- ************header中nav部分************ -->
+ 	  <div id="header-nav">
+ 	    <div class="content">
+ 	    <div class="nav-left left">
+ 	      <ul>
+ 	      	<li><a href="yintai.html">银泰首页</a></li>
+ 	      	<li class="nav-2">
+ 	      	  <a href="javascript:;">微信<b></b></a>
+ 	      	  <div class="hua">
+ 	      	  <a href="javascript:;">微信<b></b></a>
+ 	      	  <img src="../img/weixin.png" alt="">
+ 	      	  </div>
+ 	      	</li>
+ 	      	<li class="last nav-3">
+ 	      	<a href="javascript:;">手机银泰<b></b></a>
+ 	      	<div class="hua">
+ 	      	  <a href="javascript:;">手机银泰<b></b></a>
+ 	      	  <p>扫一扫，下载银泰客户端</p>
+ 	      	  <img src="../img/phone-code.png" alt="">
+ 	      	  </div>
+ 	      	</li>
+ 	      </ul>
+ 	    </div>
+ 	    <div class="nav-right right">
+          
+          <ul>
+            <li><a href="javascript:;">Hi,</a></li>
+            <li id='user-name' ><a href="javascript:;" style='color:tomato;'>欢迎来到银泰网!</a></li>
+            <li id='backhome' style='display: none'><a href="javascript:;">退出</a></li>
+            <li id='login'><a href="yintai-login.html">登录</a></li>
+            <li id="register"><a href="yintai-register.html">注册</a></li>
+            <li>|</li>
+          	<li><a href="javascript:;">我的订单</a></li>
+          	<li>|</li>
+          	<li class="nav-menu">
+          	<a href="javascript:;" class="nav-a">我的银泰</a>
+          	<b></b>
+          	<ul>
+          		<li><a href="javascript:;">我的收藏</a></li>
+          		<li><a href="javascript:;">我的余额</a></li>
+          		<li><a href="javascript:;">我的银元</a></li>
+          		<li><a href="javascript:;">我的银泰卡</a></li>
+          		<li><a href="javascript:;">我的优惠券</a></li>
+          		<li><a href="javascript:;">我的积分</a></li>
+          	</ul>
+          	</li>
+          	<li>|</li>
+          	<li><a href="javascript:;">银泰卡</a></li>
+          	<li>|</li>
+          	<li><a href="javascript:;">帮助中心</a></li>
+          </ul>
+ 	    </div>
+ 	   </div>
+ 	  </div>
+
+ 	  <!-- ******************LOGO部分**************** -->
+ 	  <div id="header-logo">
+       <div class="content">
+        <div class="yt-wrap top-main">
+            <h1 class="ilogo">
+                <a href="yintai.html">银泰网</a>
+            </h1>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <!-- ********************order-main部分******************** -->
+    <div id="order-main">
+     <div class="content">
+      <div class="cart-steps">
+         <h2></h2>
+      </div>
+      <div class="see-order">
+        <h3>收货信息 <a href="javascript:;" class="see-orderdown">【修改】</a></h3>
+        <p class="see-addorder"></p>
+      </div>
+
+      <div class="order-address" style="display:none">
+        <h3>收货信息</h3>
+         
+         <div class="finish-address" style="display:none"> </div><!--  /*class='' */ -->
+         <p class="addlist"><label><input type="checkbox" class="asslistIp" name="choose">添加新地址</label></p>
+         <div class="order-content" >
+           <table>
+             <tr>
+             	<td class="td1">收货人：</td>
+             	<td><input type="text" class='consignee left'>  <span class="tishi consignee-ts">请您填写收货人姓名</span></td>
+             </tr>
+             <tr>
+             	<td  class="td1">手机：</td>
+             	<td>
+             	<div class="left"><input type="text" class='consignee-tell'> 或者 固定电话：<input type="text" class='Gtell-1'> - <input type="text" class='Gtell-2'> - <input type="text" class='Gtell-3'></div>
+             	<span class="tishi consignee-tell-ts right">请您填写手机号码或者固话</span></td>
+             </tr>
+             <tr>
+             	<td  class="td1">收货地址：</td>
+             	<td>
+             	 <select class="receive1">
+             	  <option>请选择</option>
+             	  <option>北京市</option>
+             	  <option>天津市</option>
+             	  <option>河北省</option>
+             	  <option>山西省</option>
+             	  <option>辽宁省</option>
+             	  <option>河南省</option>
+             	 </select>
+             	 <select class='receive2'>
+             	   <option>请选择</option>
+             	   <option>北京市</option>
+             	 </select>
+             	 <select class='receive2'>
+             	   <option>请选择</option>
+             	   <option>市辖区</option>
+             	   <option>县</option>
+             	 </select>
+             	 <select class='receive2'>
+             	   <option>请选择</option><option>石家庄市</option><option>唐山市</option><option>秦皇岛市</option><option>邯郸市</option><option>邢台市</option><option>保定市</option><option>张家口市</option><option>承德市</option><option>沧州市</option><option>廊坊市</option><option>衡水市</option>
+             	 </select>
+             	 <select class='receive2'>
+             	   <option>请选择</option><option>太原市</option><option>大同市</option><option>阳泉市</option><option>长治市</option><option>晋城市</option><option>朔州市</option><option>晋中市</option><option>运城市</option><option>忻州市</option><option>临汾市</option><option>吕梁市</option>
+             	 </select>
+             	 <select class='receive2'>
+             	   <option>请选择</option>
+             	   <option>沈阳市</option><option>大连市</option><option>鞍山市</option><option>抚顺市</option><option>本溪市</option><option>丹东市</option><option>锦州市</option><option>营口市</option><option>阜新市</option><option>辽阳市</option><option>盘锦市</option><option>铁岭市</option><option>朝阳市</option><option>葫芦岛市</option>
+             	 </select>
+             	 <select class='receive2'>
+             	   <option>请选择</option>
+             	   <option>郑州市</option><option>开封市</option><option>洛阳市</option><option>平顶山市</option><option>安阳市</option><option>鹤壁市</option><option>新乡市</option><option>焦作市</option><option>濮阳市</option><option>许昌市</option><option>漯河市</option><option>三门峡市</option><option>南阳市</option><option>商丘市</option><option>信阳市</option><option>周口市</option><option>驻马店市</option>
+             	 </select>
+
+             	 <select class="receive3">
+             	   <option>请选择</option>
+             	   <option>中原区</option><option>二七区</option><option>管城回族区</option><option>金水区</option><option>上街区</option><option>邙山区</option><option>中牟县</option><option>巩义市</option><option>荥阳市</option><option>新密市</option><option>新郑市</option><option>登封市</option><option>惠济区</option><option>郑东新区</option><option>高新技术开发区</option>
+             	 </select>
+                 <br/>
+                 <input type="text" class="detail-address left" style="width:290px;margin-top: 10px;margin-bottom: 10px"><span class="tishi detail-address-ts">请您选择送货地址所在区域</span>
+
+             	</td>
+             </tr>
+             <tr>
+             	<td  class="td1">邮政编码：</td>
+             	<td><input type="text" class="address-code left" style="width:80px"><span class="tishi address-code-ts">请您填写邮编</span></td>
+             </tr>
+           </table>
+
+           <div class='goods-time-all'>
+            <h5 class="left">送货时间：</h5>
+            <div class="goods-time" class="left">
+             <p><label><input type="radio" name="timer" checked="checked"> 工作日送货 （周一至周五，早上 9:00 至晚上 6：00）</label></p>
+             <p><label><input type="radio" name="timer"> 节假日送货 （周六日及国家法定节假日）</label></p>
+             <p><label><input type="radio" name="timer"> 任何时间送货</label></p>
+            </div>
+           </div>
+
+         </div>
+
+         <div class="confirm-message" style="display:block">
+        <a href="javascript:void(0)" class='confirm left'>确认收货信息</a>
+        <span class='last-cue tishi left' style="padding-top: 6px;">请确认收货信息</span>
+        </div>
+
+        
+
+      </div>
+
+      <div class="payment-method see-payment-method" style="display:block">
+        <h5>支付方式 <a href="javascript:;" class="med-down">【修改】</a></h5>
+        <p>您本次购物需支付 <b>￥</b><b class='settlement'>0</b> 元</p>
+        <p class="see-method"><label><input type="radio" name="paymet"> <img src="../img/met-panel2.png"/></label></p>
+      </div>
+
+      <div class="hide-payment-method payment-method" style="display:none;">
+        <h5>支付方式 <a href="javascript:;"  class="med-up">【取消】</a></h5>
+        <p>您本次购物需支付 <b>￥</b><b class='settlement'>0</b> 元</p>
+        <div class="hide-method">
+         <p>选择其他支付方式</p>
+         <ul class="met-list clear">
+           <li class="met-action">储蓄卡</li>
+           <li>平台支付</li>
+           <li>信用卡</li>
+           <li>分期付款</li>
+         </ul>
+         <div class="met-content">
+           <div class="met-panel" style='display: block'>
+            <label><input type="radio" name="paymet"> <img src="../img/logo_015.jpg"/></label>
+           </div>
+           <div class="met-panel">
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel1.png"/></label>
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel2.png"/></label>
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel3.png"/></label>
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel4.png"/></label>
+           </div>
+
+           <div class="met-panel">
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel5.png"/></label>
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel6.png"/></label>
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel7.png"/></label>
+           </div>
+
+           <div class="met-panel">
+            <label><input type="radio" name="paymet"> <img src="../img/met-panel8.png"/></label>
+           </div>
+
+           <button class='met-confirm'>确定</button>
+
+         </div>
+        </div>
+      </div>
+
+      <!-- ********************发票信息******************* -->
+      <div class="see-invoice-info" style="display:block">
+        <h5>发票信息 <a href="javascript:;" class="inv-down">【修改】</a></h5>
+        <p class="info-con"><span class="info-con-l">发票信息： </span><span class="info-con-r">无</span></p>
+      </div>
+
+      <div class="hide-invoice-info" style="display:none">
+        <h5>发票信息</h5>
+        <div class="hide-info-con clear">
+          <p class='left info-left'><label><input type="checkbox" class="info-chek"> 发票信息</label></p>
+          <div class="left hide-right">
+            <div class="card-info"><label><input type="radio" name="info"> 个人</label>
+            <label><input type="radio" name="info"> 公司</label><span class="info-ts"></span></div>
+            <div>
+              <p class='sel-com'><select>
+              <option selected="selected">请选择发票类型</option>
+              <option value="商品明细">商品明细</option>
+              <option value="服装">服装</option>
+              <option value="皮具">皮具</option>
+              <option value="箱包">箱包</option>
+              <option value="化妆品">化妆品</option>
+              <option value="饰品">饰品</option>
+              <option value="家居用品">家居用品</option>
+              <option value="珠宝">珠宝</option>
+              <option value="鞋">鞋</option></select></p>
+
+              <p class='sel-com' style="display:block">
+                <input type="text" placeholder="请填写公司名称" class='company'>
+                <select>
+              <option selected="selected">请选择发票类型</option>
+              <option value="商品明细">商品明细</option>
+              <option value="服装">服装</option>
+              <option value="皮具">皮具</option>
+              <option value="箱包">箱包</option>
+              <option value="化妆品">化妆品</option>
+              <option value="饰品">饰品</option>
+              <option value="家居用品">家居用品</option>
+              <option value="珠宝">珠宝</option>
+              <option value="鞋">鞋</option></select>
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="javascript:;" class="preservation">保存</a>
+      </div>
+
+
+      <div class="commodity-list">
+        <h4 class="commodity-h4">商品清单</h4>
+        <p class='commodity-word'>以下商品将有银泰网发出</p>
+        <div class="order-goods">
+          <ul class="or-ul1">
+          	<li class="or-li1">商品编号</li>
+          	<li class="or-li2">商品明细</li>
+          	<li class="or-li3">获得积分</li>
+          	<li class="or-li4">数量</li>
+          	<li class="or-li5">单价</li>
+          	<li class="or-li6">小计</li>
+          </ul>
+           <!-- 增加的订单 -->
+        </div>
+      </div>
+
+      <div class="other-order">
+       <p class="hide-order clear">
+       <label><input type="checkbox"> 隐藏订单金额</label> <span class="problem"><span class="hide-p"><b></b></span></span>
+       </p>
+       <div class="coupon clear">
+         <p class='see-coupon clear'>使用优惠券 <i></i></p>
+         <div class="hide-coupon">
+           <ul><li>金额</li><li>品类</li><li>有效期</li><li>说明</li></ul>
+           <div>
+             <label><input type="radio"> 其他优惠券</label>
+             <p>优惠券码： <input type="text"> <input type="button" value="使用" class="usebtn"></p>
+           </div>
+         </div>
+       </div>
+       <div class="payment clear">
+         <p class='see-payment'>使用银泰卡支付 <i></i></p>
+         <div class="hide-payment">
+            <p class="hide-payment-p1">请输入您的银泰卡卡号： <input type="text">&nbsp;&nbsp;&nbsp;网购激活码：<input type="text"> <button>使用</button></p>
+            <div class="hide-payment-p2">
+             <p>可使用的银泰卡</p>
+             <ul><li>卡号</li><li>可用金额</li><li>本次使用金额</li><li>余额</li><li>类型</li></ul>
+            </div>
+         </div>
+       </div>
+      </div>
+
+      <div class="bot-comList">
+        <div class="bot-comtop">
+          <p class="comtop-p1">您已选 <b class="J-CartCount"> 0 </b>   件商品 &nbsp;&nbsp;&nbsp;商品总价：￥<b class="cloth-total-price total-color">0</b></p>
+          <p class="comtop-p2">节省金额：￥0.00</p>
+          <p class="comtop-p3">运费：￥<b class="carriage">0</b></p>
+          <p class="comtop-p4">需支付金额：<b>￥</b><b class="settlement">0</b></p>
+        </div>
+        <div class="bot-combot">
+          <a href="yintai-shoppingcart.html" class="backbuy">返回购物袋</a>
+          <a href="javascript:;" class="tijiao"></a>
+        </div>
+      </div>
+
+
+
+    </div>
+    </div>
+
+    <div id="success">
+    <div class="success-outer"></div>
+      <div class="success-con">
+       <h4>温馨提示<span class="success-span">X</span></h4>
+       <p>恭喜您，提交成功，请尽快付款！</p>
+      </div>
+    </div>
+
+
+
+
+  <!-- ****************footer部分************** -->
+       <div id="footer">
+         <div class="content">
+          <div class="yt-wrap itips">
+            <span class="service">
+             <strong>400-119-1111</strong><i>8:00-24:00</i>
+             <b>service@yintai.com</b>
+           </span>
+           <span class="delivery">
+            <strong><i>15天</i>无忧退换货</strong>
+            <b>为您提供优质售后服务</b>
+           </span>
+          <span class="genuine">
+            <strong><i>100%</i>正品保证</strong>
+            <b>品质护航 购物无忧</b>
+          </span>
+          <span class="freight">
+            <strong><i>满199元</i>免运费</strong>
+            <b>为您提供便利物流</b>
+          </span>			
+	    </div>
+	 <div class="yt-wrap ilinks">
+        <a  href="javascript:;">关于银泰</a>|<a href="javascript:;">帮助中心</a>|<a 
+
+		href="javascript:;">退换货政策</a>|<a href="javascript:;">网站地图</a>|<a  href="javascript:;">代理合作</a>|<a  href="javascript:;">品牌招商
+
+		</a>|<a  href="javascript:;">商务合作</a>|<a href="javascript:;">网站联盟</a>|<a  
+
+		href="javascript:;">联系我们</a>|<a  href="javascript:;">加入银泰</a>|<a  
+
+		href="javascript:;">版权声明</a>|<a  href="javascript:;" class="last">法律声明</a>
+	</div>
+	<div class="yt-wrap copyright">
+		<p><a href="javascript:;">浙ICP备10200233号</a><a href="javascript:void(0)">京公网安备110105019085</a><a href="javascript:void(0)">增值电信业务经营许可证：浙B2-20110005</a></p>
+        <p>Yintai © 2016, 银泰电子商务有限公司.</p>
+    </div>
+    <div class="yt-wrap all-mark">
+        <a class="m-integrity" id="___szfw_logo___" href="javascript:;">
+            <img alt="" src="../img/yt-ntegrity.png">
+        </a>
+        <a class="cnnic"  href="javascript:;">
+            <img src="../img/cnnic.png">
+        </a>
+        <a class="commerce" href="javascript:;">
+            <img alt="" src="../img/commerce.gif">
+        </a>
+    </div>
+   </div>
+    </div>
+
+
+
+	
+</body>
+</html>

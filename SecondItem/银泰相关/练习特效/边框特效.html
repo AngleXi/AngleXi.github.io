@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	  *{
+	  	margin:0;
+	  	padding:0;
+	  }
+	  #outer{
+	  	width:300px;
+	  	height:300px;
+	  	background-color: pink;
+	  	margin:100px auto;
+	  	position: relative;
+	  }
+	  #outer div{
+	  	width:0px;
+	  	height:0px;
+	  	background-color: #000;
+	  	position:absolute;
+	  	transition: all 0.5s ease-out;
+	  }
+	  .border-top{
+        top:0;
+        left:0;
+	  }
+	  .border-right{
+	  	bottom:0;
+	  	right:0;
+	  }
+	  .border-bottom{
+	  	bottom:0;
+	  	right:0;
+	  }
+	  .border-left{
+	  	top:0;
+	  	left: 0;
+	  }
+	  #outer:hover .border-top{
+	  	height:2px;
+	  	width:300px;
+	  }
+	  #outer:hover .border-right{
+	  	height:300px;
+	  	width:2px;
+	  }
+	  #outer:hover .border-bottom{
+	  	width:300px;
+	  	height:2px;
+	  }
+	  #outer:hover .border-left{
+	  	width:2px;
+	  	height:300px;
+	  }
+	</style>
+</head>
+<body>
+	<div id="outer">
+	 <div class="border-top"></div>
+	 <div class="border-right"></div>
+	 <div class="border-bottom"></div>
+	 <div class="border-left"></div>
+	</div>
+</body>
+</html>
